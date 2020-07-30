@@ -1,6 +1,6 @@
 
 const Author = require('../models/author');
-const Book = require('../models/Book');
+const Book = require('../models/book');
 const moment = require('moment');
 
 module.exports = function (app, passport) {

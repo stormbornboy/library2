@@ -1,4 +1,4 @@
-const Book = require('../models/Book');
+const Book = require('../models/book');
 var Weblog = require('../models/weblog');
 const Category = require('../models/category');
 const moment = require('moment');
