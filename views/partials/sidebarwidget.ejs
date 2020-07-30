@@ -1,0 +1,124 @@
+<div class="widget-holder">
+    <div id="content">
+        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a href="#popular" data-toggle="tab"> محبوب</a></li>
+            <li><a href="#recent" data-toggle="tab">تازه ها</a></li>
+        </ul>
+        <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane active" id="popular">
+                <ul class="post-list">
+
+                    <% popularBooks.forEach(function(book){ %>
+
+                    <li>
+                        <a href="/books/<%= book.id %>">
+                            <div class="img-holder-l"><img width=85 height="126" src="<%= book.ImagePath %>" alt="" />
+                            </div>
+                            <div class="img-cap-r">
+                                <p>
+                                <h4><a href="/books/<%= book.id %>"><%= book.Name %></a></h4>
+                                </p>
+                                <p>اثر <%= book.Author.Name %> </p><br>
+                                <p>
+                                    <%= book.About.split('.').slice(0,1).join('') %>
+                                </p>
+                        </a>
+            </div>
+            </li>
+
+            <% }); %>
+
+
+
+            </ul>
+        </div>
+        <div class="tab-pane" id="recent">
+            <ul class="post-list">
+
+                <% newBooks.forEach(function(book){ %>
+
+                <li>
+                    <a href="/books/<%= book.id %>">
+                        <div class="img-holder-l"><img width=85 height="126" src="<%= book.ImagePath %>" alt="" />
+                        </div>
+                        <div class="img-cap-r">
+                            <p>
+                            <h4><a href="/books/<%= book.id %>"><%= book.Name %></a></h4>
+                            </p>
+                            <p>اثر <%= book.Author.Name %> </p><br>
+                            <p>
+                                <%= book.About.split('.').slice(0,1).join('') %>
+                            </p>
+                    </a>
+        </div>
+        </li>
+
+        <% }); %>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<div class="widget-holder" dir="ltr">
+    <h4>اخبار </h4>
+    <div class="testimonials-slider">
+        <figure class="testimonials">
+            <ul id="testimonials">
+                <li>
+                    <p>
+                    <h4>دسترسی رایگان به پایان نامه های دانشجویی كشورهای اروپایی از طریق پایگاه DIVA
+                    </h4>
+                    با سلام خدمت تمامی اساتید بزرگوار، دانشجویان، همکاران و...پایگاه DIVA، پایگاهی
+                    اروپایی است که
+                    دانشجویان میتوانند برای دریافت رایگان پایان نامه های دانشجویی به آن مراجعه کنن
+                    </p>
+
+                </li>
+                <li>
+                    <p>
+                    <h4>جستجوی کتب لاتین موجود در 27 نمایشگاه بین المللی کتاب تهران</h4>
+                    جستجوی بخش ارزی و ریالی کتب لاتین موجود در 27 نمایشگاه بین المللی کتاب تهران
+                    http://tibf.ir/fa/book?bookLang=en
+
+
+
+                    </p>
+
+                </li>
+            </ul>
+        </figure>
+    </div>
+</div>
+
+<div class="widget-holder">
+    <h4>وبلاگ</h4>
+    <figure class="books-slider" dir="ltr">
+        <ul id="books-slider">
+            <% weblogs.forEach(function(weblog){ %>
+            <li>
+                <div><img src= <%=weblog.SidebarImagePath%> alt="" /></dev>
+                    <a class="bx-prev" href=""></a>
+
+                </div>
+                <div class="book-cap-bar">
+                    
+                    <strong>
+                        <a href="/weblog/<%=weblog._id%>"> <%=weblog.Title%></a>
+                    </strong>
+                    <!-- <span>معرفی ۱۲ کتاب از بهترین و پرفروش‌ترین رمان‌های دنیا</span> -->
+                </div>
+            </li>
+            <%});%>
+            <!-- <li>
+                <div><img src="/images/image18.jpg" alt="" /></div>
+                <div class="book-cap-bar">
+                    <strong>
+                        <a href="/charlesdicknes"> ۱۸ حقیقت جالب در مورد چارلز دیکنز</a>
+
+                    </strong>
+                    <span>در سالروز درگذشت او که تا به حال نشنیده‌اید</span>
+                </div>
+            </li> -->
+        </ul>
+    </figure>
+</div>

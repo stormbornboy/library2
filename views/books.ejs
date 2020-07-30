@@ -1,0 +1,110 @@
+<%- include('partials/header'); -%>
+
+<!-- Start Book Detail Slider -->
+<section id="book_detail_slider">
+  <section class="container-fluid container">
+    <section class="row-fluid">
+      <figure class="span5 scr-style">
+        <div class="side" id="side2">
+          <div class="center">
+            <div class="photo">
+              <div class="face">
+                <img src="<%= book.ImagePath %>" alt="">
+
+                <div class="cleaner"></div>
+              </div>
+            </div>
+      </figure>
+      <figure class="span7">
+        <div class="slider_content">
+          <h3> <%= book.Name %></h3>
+
+          <%- include('partials/notif'); -%>
+
+
+          <h4>
+
+
+            <figure class="span6 first details">
+              <ul>
+                <li>
+
+                  <strong> عنوان:</strong>
+                  <p> <%= book.Name %> </p>
+                </li>
+
+                <li>
+                  <strong> درباره:</strong>
+                  <p><%= book.About %></p>
+                </li>
+                <li>
+                  <strong> پدید آورنده:</strong>
+                  <p><%= book.Author.Name %></p>
+                </li>
+                <li>
+                  <strong> مترجم:</strong>
+                  <p><%= book.Translator %></p>
+                </li>
+
+                <li>
+                  <strong> موضوع:</strong>
+                  <p> <%= book.Category.Name %></p>
+                </li>
+
+              </ul>
+            </figure>
+            <a href="/books/<%= book.id %>/reserve" class="purchase2">
+              رزرو کتاب
+            </a>
+        </div>
+      </figure>
+    </section>
+  </section>
+</section>
+<!-- End Book Detail Slider -->
+
+
+
+
+<!-- Start Pricing Section -->
+<section id="pricing" class="ptb">
+  <section class="container-fluid container">
+    <section class="row-fluid">
+      <h3>
+        کتاب <%= book.Name %> </h3>
+      <h4> درباره کتاب
+      </h4>
+      <h5>
+        <%= book.About %>
+      </h5>.
+    </section>
+  </section>
+</section>
+<!-- End Pricing Section -->
+
+
+
+<!-- Start About The Author -->
+<section id="author" class="ptb">
+  <section class="container-fluid container">
+    <section class="row-fluid">
+      <figure class="span6">
+        <h3>
+          درباره نویسنده
+        </h3>
+        <span class="author_name"> <%= book.Author.Name %></span>
+        <p><%= book.Author.About %></p>
+      </figure>
+      <figure class="span6 author_slider" dir="ltr">
+        <ul id="author_slider">
+          <li> <img src="<%= book.Author.ImagePath %>" alt="" /></li>
+
+        </ul>
+      </figure>
+    </section>
+  </section>
+</section>
+<!-- End About The Author -->
+
+
+<%- include('partials/footer'); -%>

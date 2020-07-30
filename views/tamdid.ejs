@@ -1,0 +1,244 @@
+﻿<%- include('partials/header'); -%>
+	
+	<!-- Start Inner Page Holder -->
+		<section id="inner-page-holder">
+		<!-- Start Inner Page Title Bar -->
+			<section id="title-bar" class="content-col">
+				<section class="container-fluid container">
+					<section class="row-fluid">
+						
+<!-- شما اینجا هستید:
+</span>  <a href="/">صفحه اصلی</a></p> -->
+						</article>
+						
+					</section>
+				</section>
+			</section>
+		<!-- End Inner Page Title Bar -->
+		
+		<!-- Start Inner Main Content Holder -->
+			<section id="col-holder">
+				<section class="container-fluid container">
+					<section class="row-fluid">
+						<article class="span8">
+							<div class="content-col">
+								<!-- <h4 dir="rtl" align="right" > دانشجویان مقطع کارشناسی : هر عضو مجموعا تا 5  جلد کتاب به مدت 15  روز میتوانند تمدید کنند </h4>
+<h4 dir="rtl" align="right" > دانشجویان مقطع کارشناسی ارشد : هر عضو مجموعا تا 6  جلد کتاب به مدت 15  روز میتوانند تمدید کنند </h4>
+<h4 dir="rtl" align="right" > دانشجویان مقطع دکتری : هر عضو مجموعا تا 8  جلد کتاب به مدت 30  روز میتوانند تمدید کنند </h4>
+<h4 dir="rtl" align="right" > اعضای هیات علمی : اساتید میتوانند حداکثر 8 جلد کتاب به مدت 30 روز میتوانند تمدید کنند و حداکثر 2 جلد کتاب میتوانند به مدت یک ترم تحصیلی در امانت خود داشته باشند</h4>
+<h4 dir="rtl" align="right" > اعضاء آزاد : هر عضو مجموعا 4 جلد کتاب به مدت 15 روز میتوانند تمدید کنند  </h4><br> -->
+<h4 style =  "  color  :  blue ; " dir="rtl" align="right" > برای اینکه بتوانید عملیات تمدید را انجام دهید ، باید عضو کتابخانه بوده و کتابی را امانت گرفته باشید</h4>
+								
+<center>
+<a href="/users/login" > ورود </a></br>
+</center>
+	
+
+<h4 style="color: blue;" dir="rtl" align="right">اگر حساب کاربری ندارید ، ابتدا عضو شده و بعد از ایجاد حساب کاربری ، وارد حساب خود شده و کتاب مورد نظر خود را تمدید کنید </h4>
+<center>
+<a href="/users/register" > عضویت </a></br>
+</center>
+										
+							</div>
+						</article>
+						
+						<article class="span4">
+							<div class="left-col">
+								<div class="widget-holder" dir="ltr">
+									<h4>
+دسته بندی 
+</h4>
+
+									<ul class="cat-list">
+										<% Categories.forEach(function(cat){ %>
+										<li>
+											<a href="#"><i class="icon-angle-right"></i><%= cat.Name %></a>
+											<span class="num"><%= cat.Books.length %></span>
+										</li>
+										<% }); %>
+										<!-- <li>
+											<a href="#"><i class="icon-angle-right"></i>تاریخی</a>
+											<span class="num">220</span>
+										</li>
+										<li>
+											<a href="#"><i class="icon-angle-right"></i>ادواری</a>
+											<span class="num">152</span>
+										</li>
+										<li>
+											<a href="#"><i class="icon-angle-right"></i> سمعی</a>
+											<span class="num">32</span>
+										</li>
+										<li>
+											<a href="#"><i class="icon-angle-right"></i>
+
+بصری </a>
+											<span class="num">76</span>
+										</li>
+										<li>
+											<a href="#"><i class="icon-angle-right"></i>آموزشی</a>
+											<span class="num">33</span>
+										</li>
+										<li>
+											<a href="#"><i class="icon-angle-right"></i>دیجیتالی</a>
+											<span class="num">110</span>
+										</li> -->
+									</ul>
+								</div>
+								
+								
+								<%- include('partials/sidebarwidget'); -%>
+								<!-- <div class="widget-holder">
+									<div id="content">
+										<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+											<li class="active"><a href="#popular" data-toggle="tab"> محبوب</a></li>
+											<li><a href="#recent" data-toggle="tab">تازه ها</a></li>
+										</ul>
+										<div id="my-tab-content" class="tab-content">
+											<div class="tab-pane active" id="popular">
+												<ul class="post-list">
+													<li>
+														<a href="/gatesbi">
+															<div class="img-holder-l"><img src="/images/image19.jpg" alt="" /></div>
+															<div class="img-cap-r">
+																<p><h4><a href="/gatesbi">گتسبی</a></h4></p>
+																<p>اثر ویلا کاتر</p><br>
+																<p>موضوع این رمان برتر درباره‌ی نخستین اسقف نیومکزیکو، ژان‌ماریه لاتور و دستیارش ژوزف ویان در دهه‌ی ۱۸۵۰ میلادی است که با دو قاطرشان</p>
+															
+															</a>
+														</div>
+													</li>
+													<li>
+														<a href ="/revayateyekmarg">
+															<div class="img-holder-l"><img src="/images/image20.jpg" alt="" /></div>
+															<div class="img-cap-r">
+																<p><h4><a href="/revayateyekmarg">روایت یک مرگ</a></h4></p>
+																<p>اثر جی.آر.آر. تالکین </p><br>
+																<p>رمانی معروف که یکی از ۱۰۰ رمان برتر جهان است. رمانی به سبک خیال‌پردازی حماسی که  طی ۱۲ سال از ۱۹۳۷ تا ۱۹۴۹ نگارش شده‌است</p>
+															</a>
+														</div>
+													</li>
+													<li>
+														<div class="img-holder-l"><img src="/images/image21.jpg" alt="" /></div>
+														<div class="img-cap-r">
+															<p><h4>خانم دالاوی</h4></p>
+															<p>اثر ویرجینیا وولف</p><br>
+															<p>وولف این رمان برتر جهان را به شیوه‌ی سیال ذهن نوشته و پیوسته بین زمان حال و گذشته‌ی شخصیت‌ها در حرکت است</p>
+														
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="tab-pane" id="recent">
+												<ul class="post-list">
+													<li>
+														<a href="/galeeheyvanat">
+															<div class="img-holder-l"><img src="/images/image22.jpg" alt="" /></div> 
+															<div class="img-cap-r">
+																<p><h4><a href="/galeeheyvanat"> قلعه‌ی حیوانات </a></h4></p>
+																<p>اثر جرج اورول</p><br>
+																<p>داستان درباره‌ی گروهی از جانوران اهلی است که در اقدامی آرمان‌گرایانه و انقلابی، صاحب مزرعه (آقای جونز) را از مزرعه‌اش فراری می‌دهند تا خود اداره‌ی مزرعه را به‌دست گرفته </p>
+															</a>
+														</div>
+													</li>
+													
+													<li>
+														<a href="/natordeshet">
+															<div class="img-holder-l"><img src="/images/image23.jpg" alt="" /></div>
+															<div class="img-cap-r">
+																<p><h4><a href ="/natordeshet">ناطوردشت</a></h4></p>
+																<p>اثر جروم دیوید سلینجر</p><br>
+																<p>شخصیت اصلی رمان، هولدن کالفیلد، نوجوانی ۱۷ ساله‌ است. او در جایی شبیه مرکز توانبخشی یا مرکز درمانی و یا چیزی شبیه به این است که قصد دارد </p>
+															</a>
+														</div>
+													</li>
+													<li>
+														<div class="img-holder-l"><img src="/images/image24.jpg" alt="" /></div>
+														<div class="img-cap-r">
+															<p><h4>بربادرفته</h4></p>
+															<p>اثر مارگارت میچل</p><br>
+															<p>مارگارت میچل برای این رمانِ عاشقانه‌ی بی‌نظیر جایزه‌ی ادبی نوبل سال ۱۹۳۷ را دریافت نمود. ویکتور فلمینگ نیز برمبنای آن فیلمی ساخت که در سراسر جهان رکورد فروش را شکست.</p>
+														
+														</div>
+													</li>
+													<li>
+														<div class="img-holder-l"><img src="/images/image21.jpg" alt="" /></div>
+														<div class="img-cap-r">
+															<p><h4>خانم دالاوی</h4></p>
+															<p>اثر ویرجینیا وولف</p><br>
+															<p>وولف این رمان برتر جهان را به شیوه‌ی سیال ذهن نوشته و پیوسته بین زمان حال و گذشته‌ی شخصیت‌ها در حرکت است</p>
+														
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										</div>
+								</div>
+								<div class="widget-holder" dir="ltr">
+									<h4>اخبار </h4>
+									<div class="testimonials-slider">
+										<figure class="testimonials">
+										  <ul id="testimonials">
+											<li>
+												<p><h4>دسترسی رایگان به پایان نامه های دانشجویی كشورهای اروپایی از طریق پایگاه DIVA</h4>
+												با سلام خدمت تمامی اساتید بزرگوار، دانشجویان، همکاران و...پایگاه DIVA، پایگاهی اروپایی است که دانشجویان میتوانند برای دریافت رایگان پایان نامه های دانشجویی به آن مراجعه کنن</p>
+												
+											</li>
+											<li>
+												<p><h4>جستجوی کتب لاتین موجود در 27 نمایشگاه بین المللی کتاب تهران</h4>
+													جستجوی بخش ارزی و ریالی کتب لاتین موجود در 27 نمایشگاه بین المللی کتاب تهران
+http://tibf.ir/fa/book?bookLang=en
+ 
+
+
+												</p>
+												
+											</li>
+										  </ul>
+										</figure>
+									</div>
+								</div>
+								
+								<div class="widget-holder">
+									<h4>وبلاگ</h4>
+										<figure class="books-slider" dir="ltr">
+										  <ul id="books-slider">
+											<li>
+												
+												<div><img src="/images/image17.jpg" alt="" /></dev>
+													<a class="bx-prev" href=""></a>
+												
+												</div>
+												<div class="book-cap-bar">
+													<strong>
+													<a href= "/quarantine">	در قرنطینه چه کتاب‌هایی بخوانیم</a>
+</strong>
+													<span>معرفی ۱۲ کتاب از بهترین و پرفروش‌ترین رمان‌های دنیا</span>
+												</div>
+											</li>
+											<li>
+												<div><img src="/images/image18.jpg" alt="" /></div>
+												<div class="book-cap-bar">
+													<strong>
+													<a href="/charlesdicknes">	۱۸ حقیقت جالب در مورد چارلز دیکنز</a>
+
+													</strong>
+													<span>در سالروز درگذشت او که تا به حال نشنیده‌اید</span>
+												</div>
+											</li>
+										  </ul>
+										</figure>
+								</div> -->
+								
+							</div>
+						</article>
+					</section>
+				</section>
+			</section>
+		<!-- End Inner Main Content Holder -->
+		
+		</section>
+	<!-- End Inner Page Holder -->
+
+
+	<%- include('partials/footer'); -%>

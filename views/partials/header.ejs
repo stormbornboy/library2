@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>کاف کتاب</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,700,800,900' rel='stylesheet'
+    type='text/css'>
+  <!-- Google Font -->
+  <!-- Css Files Start -->
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <!-- All css -->
+  <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" type="text/css" href="/css/main-slider.css" />
+  <!-- Main Slider Css -->
+  <!--[if lte IE 10]>
+    <link rel="stylesheet" type="text/css" href="css/customIE.css" />
+    <![endif]-->
+  <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome Css -->
+  <link href="/css/font-awesome-ie7.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome iE7 Css -->
+  <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome iE7 Css -->
+  <!-- color Switcher -->
+
+  <!-- color Switcher -->
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="/css/noJS.css" />
+  </noscript>
+  <!-- Css Files End -->
+
+  <link rel="stylesheet" id="skins" href="/css/default.css" type="text/css" media="all"><!-- skins -->
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
+  <!-- Start Main Wrapper -->
+  <div class="wrapper">
+
+    <header id="header">
+      <section class="container-fluid container">
+        <% if (user){ %>
+        <!-- <div class="container h-100"> 
+            <div class="position-relative h-100"> 
+                
+                <div class="position-absolute top-left"> 
+                  <a class="btn btn-danger" href="/users/logout" role="button">خروج</a>
+                </div> 
+            </div> 
+        </div>  -->
+        <!-- <a class="btn btn-light btn-lg btn-primary position-absolute top-left" href="/users/logout" role="button">خروج</a> -->
+        <% } %>
+        <section class="row-fluid">
+          <div class="logo span3">
+
+
+            <h1 id="logo"><a href="/"><img src="/images/logo.png" alt="Bookish Theme Logo" /></a></h1>
+
+          </div>
+
+
+          <nav id="nav">
+            <div class="navbar navbar-inverse pull-left span9">
+              <div class="navbar-inner">
+                <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+
+                    <% if (user){ %>
+                    <!-- <a class="btn btn-danger pull-left pl-4 ml-4" href="/users/logout" role="button">خروج</a> -->
+                    <li> <a href="/users/logout">خروج
+                      </a> </li>
+                    <% } else{ %>
+                    <li> <a href="/users/register">عضویت
+                      </a> </li>
+                    <li> <a href="/users/login">ورود
+                      </a> </li>
+                    <% } %>
+                    <li class="active"> <a href="/weblog"> وبلاگ </a> </li>
+                    <li> <a href="/tamdid">تمدید کتاب</a> </li>
+                    <li> <a href="/">صفحه اصلی</a> </li>
+
+
+
+                  </ul>
+                  <!-- <div class="col-md-4 offset-md-4 mt-5 border border-success pt-3">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Search ......"
+                        aria-label="Recipient's username">
+                      <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                      </div>
+                    </div>
+                  </div> -->
+
+                </div>
+                <!--/.nav-collapse -->
+              </div>
+              <!-- /.navbar-inner -->
+            </div>
+            <!-- /.navbar -->
+          </nav>
+        </section>
+      </section>
+    </header>

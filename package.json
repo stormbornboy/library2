@@ -1,0 +1,39 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "This is a sample project to learn nodejs with passport authentication",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "passport",
+    "node",
+    "google"
+  ],
+  "author": "Kunal Gaurav",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "joi": "^17.1.1",
+    "method-override": "^2.3.6",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.26",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {}
+}
