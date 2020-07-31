@@ -5,7 +5,7 @@ const moment = require('moment');
 const reservePeriod = 5//can reserve for 5 more dayes
 const maxSetReservable = 2//can reserve for 5 more dayes
 module.exports = function (app, passport) {
-	app.get('*', async function (req, res, next) {
+	app.use('*', async function (req, res, next) {
 		let newBooks = await Book.find({}, null, { limit: 4 }).sort([['CreatedAt', 'descending']]).populate('Author').populate('Category');
 		let popularBooks = await Book.getBookByMeta('Borrows', 1, 4);
 		let Categories = await Category.find();

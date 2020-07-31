@@ -76,7 +76,7 @@ module.exports = function (app, passport) {
         } catch (error) {
             console.log(error);
             req.flash('error', error.message)
-            res.redirect("..");
+            res.redirect('..');
         }
 
 
