@@ -31,7 +31,7 @@
     "express-session": "^1.14.1",
     "joi": "^17.1.1",
     "method-override": "^2.3.6",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.9.26",
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
